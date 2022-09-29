@@ -21,7 +21,7 @@ function App() {
   }, []);
 
   const readNpc = () => {
-    fetch("http://localhost:3000/npcs")
+    fetch("https://salty-plains-19391.herokuapp.com/npcs")
       .then((response) => response.json())
       .then((payload) => {
         setNpcs(payload);
@@ -30,7 +30,7 @@ function App() {
   };
 
   const createNpc = (npc) => {
-    fetch("http://localhost:3000/npcs", {
+    fetch("https://salty-plains-19391.herokuapp.com/npcs", {
       body: JSON.stringify(npc),
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function App() {
   };
 
   const updateNpc = (npc, id) => {
-    fetch(`http://localhost:3000/npcs/${id}`, {
+    fetch(`https://salty-plains-19391.herokuapp.com/npcs/${id}`, {
       body: JSON.stringify(npc),
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ function App() {
   };
 
   const deleteNpc = (id) => {
-    fetch(`http://localhost:3000/npcs/${id}`, {
+    fetch(`https://salty-plains-19391.herokuapp.com/npcs/${id}`, {
       headers: {
         "Content-Type": "application/json"
       },
