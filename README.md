@@ -11,4 +11,5 @@ Instructions:
 6. in your web browser, navigate to localhost:3001 to see the app.
 
 NOTE: For full functionality, you must also have the BACKEND portion of the app running as well.
+https://github.com/Hieuhuule/stardew-valley-backend-companion-app 
 
